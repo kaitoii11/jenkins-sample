@@ -4,10 +4,8 @@ pipeline {
     stage('build') {
       steps {
         sh 'mvn --version'
-        sh '''
-          echo "Hoge hoge"
-        ''''
+        sh 'echo "Hoge hoge"'
       }
     }
   }
-}}}
+}
