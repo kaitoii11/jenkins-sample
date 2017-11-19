@@ -1,6 +1,6 @@
 pipeline {
   agent {
-          docker { image 'node:jdk-8-alpine' }
+          docker { image 'jenkins:alpine' }
      }
   stages {
     stage('build') {
