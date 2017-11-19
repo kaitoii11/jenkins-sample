@@ -5,8 +5,10 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'mvn --version'
-        sh 'echo "Hoge hoge"'
+        sh 'mvn compile'
+      }
+      steps {
+        sh 'mvn test'
       }
     }
   }
